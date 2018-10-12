@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Collinsharper_Switchprice>
+            <version>1.0.0</version>
+        </Collinsharper_Switchprice>
+    </modules>
+    <global>
+        <events>
+            <catalog_product_get_final_price>
+                <observers>
+                    <seta_discountprice_price_observer>
+                        <type>singleton</type>
+                        <class>Collinsharper_Switchprice_Model_Observer</class>
+                        <method>switchprice</method>
+                    </seta_discountprice_price_observer>
+                </observers>
+            </catalog_product_get_final_price>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <seta_discountprice_price_observer>
+                        <type>singleton</type>
+                        <class>Collinsharper_Switchprice_Model_Observer</class>
+                        <method>switchpriceview</method>
+                    </seta_discountprice_price_observer>
+                </observers>
+            </catalog_product_collection_load_after>
+        </events>
+    </global>
+</config>
