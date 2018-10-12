@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Collinsharper_Specialpromo>
+            <version>1.0.0</version>
+        </Collinsharper_Specialpromo>
+    </modules>
+    <global>
+        <helpers>
+            <collinsharper_specialpromo>
+                <class>Collinsharper_Specialpromo_Helper</class>
+            </collinsharper_specialpromo>
+        </helpers>
+        <models>
+            <collinsharper_specialpromo>
+                <class>Collinsharper_Specialpromo_Model</class>
+            </collinsharper_specialpromo>
+        </models>
+    </global>
+</config>
